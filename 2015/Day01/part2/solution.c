@@ -41,10 +41,7 @@ int main(void) {
       }    
     }
 
-    printf("Santa is on floor %d\n", count);
-
     free(steps);
     fclose(fp);
-
     return 0;
 }
