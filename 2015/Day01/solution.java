@@ -13,6 +13,11 @@ public final class solution {
     int count = 0;
     for (int i = 0; i < steps.length(); i++) {
       count += steps.charAt(i) == '(' ? 1 : -1;
+     
+      if (count == -1) {
+        System.out.println("Santa enters the basement at position " + (i + 1));
+        break;
+      }
     }
 
     System.out.println("Santa is on floor " + count);

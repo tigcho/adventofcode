@@ -35,6 +35,10 @@ int main(void) {
         continue;
       }
       count += (steps[i] == '(') ? 1 : -1;
+      if (count == -1) {
+        printf("Santa enters the basement at position %d\n", i + 1);
+        break;
+      }    
     }
 
     printf("Santa is on floor %d\n", count);
